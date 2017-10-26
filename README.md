@@ -15,5 +15,5 @@ You will get to know more about classes as you import new classes.
 You will get to know the use of constructor and how to construct and call one.
 ```
 
-### It's just a simple program to know a lot...
+### learn the base to get the rest ;-) ...
 
