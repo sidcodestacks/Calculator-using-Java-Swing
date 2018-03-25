@@ -1,6 +1,6 @@
 # a-touch-to-java-swing-gui
 ## Simple Calculator Using java Swing GUI!!
-You will find programs of basic java swing applications ...you never know how interesting it could get!!!
+Knowing how the swing works...you never know how interesting it could get!!!
 
 # What all you get-
 ```
