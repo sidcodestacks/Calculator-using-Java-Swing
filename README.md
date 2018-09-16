@@ -1,4 +1,3 @@
-# a-touch-to-java-swing-gui
 ## Simple Calculator Using java Swing GUI!!
 Knowing how the swing works...you never know how interesting it could get!!!
 
