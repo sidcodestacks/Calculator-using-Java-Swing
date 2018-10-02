@@ -1,14 +1,4 @@
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import javax.swing.UIManager;
-import javax.swing.JFrame;
-import javax.swing.WindowConstants;
-import javax.swing.BorderFactory;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -213,49 +203,80 @@ public class Simpcalc extends JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {
+        //GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         t1.setText(null);
         t2.setText(null);
         l1.setText(null);
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {
+        //GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        float a = Float.parseFloat(t1.getText());
-        float b = Float.parseFloat(t2.getText());
-        float c = a + b;
-        l1.setText(c + " ");
-    }//GEN-LAST:event_b1ActionPerformed
+        try {
+            //GEN-FIRST:event_b1ActionPerformed
+            float a = Float.parseFloat(t1.getText());
 
-    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-        // TODO add your handling code here:
-        float a = Float.parseFloat(t1.getText());
-        float b = Float.parseFloat(t2.getText());
-        float c = a - b;
-        l1.setText(c + " ");
-    }//GEN-LAST:event_b2ActionPerformed
+            float b = Float.parseFloat(t2.getText());
+            float c = a + b;
 
-    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-        // TODO add your handling code here:
-        float a = Float.parseFloat(t1.getText());
-        float b = Float.parseFloat(t2.getText());
-        float c = a * b;
-        l1.setText(c + " ");
-    }//GEN-LAST:event_b3ActionPerformed
+            l1.setText(c + " ");
+            //GEN-LAST:event_b1ActionPerformed
+        } catch (NumberFormatException e) {
+            System.err.println(e);
+        }
+    }
 
-    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        float a = Float.parseFloat(t1.getText());
-        float b = Float.parseFloat(t2.getText());
-        float c = a / b;
-        l1.setText(c + " ");
-    }//GEN-LAST:event_b4ActionPerformed
+        try {
+            //GEN-FIRST:event_b2ActionPerformed
+            float a = Float.parseFloat(t1.getText());
+            float b = Float.parseFloat(t2.getText());
+            float c = a - b;
+            l1.setText(c + " ");
+            //GEN-LAST:event_b2ActionPerformed
+        } catch (NumberFormatException e) {
+            System.err.println(e);
+        }
+    }
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+        try {
+            //GEN-FIRST:event_b3ActionPerformed
+            float a = Float.parseFloat(t1.getText());
+            float b = Float.parseFloat(t2.getText());
+            float c = a * b;
+            l1.setText(c + " ");
+            //GEN-LAST:event_b3ActionPerformed
+        } catch (NumberFormatException e) {
+            System.err.println(e);
+        }
+    }
+
+
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {
+
+        // TODO add your handling code here:
+        try {
+            //GEN-FIRST:event_b4ActionPerformed
+            float a = Float.parseFloat(t1.getText());
+            float b = Float.parseFloat(t2.getText());
+            float c = a / b;
+            l1.setText(c + " ");
+            //GEN-LAST:event_b4ActionPerformed
+        } catch (NumberFormatException e) {
+            System.err.println(e);
+        }
+    }
+
 
     private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
         // TODO add your handling code here:
