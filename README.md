@@ -34,4 +34,3 @@ Feel free to contribute .. :D
 
 If you found a mistake, or you find improvements are needed feel free to submit 
 [**a new issue**](https://github.com/siddhartthecoder/Calculator-using-Java-Swing/issues).
->>>>>>> made changes to README.md
